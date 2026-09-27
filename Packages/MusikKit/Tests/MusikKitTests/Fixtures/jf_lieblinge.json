@@ -1,0 +1,4 @@
+{"Items":[
+ {"Name":"Nachtfahrt","Id":"l1","Type":"Audio","AlbumId":"al1","Album":"Nachtfahrt","Artists":["Lina Brenner"],"RunTimeTicks":1920000000,"UserData":{"IsFavorite":true,"PlayCount":3,"Played":true}},
+ {"Name":"Zwischenhalt","Id":"l9","Type":"Audio","AlbumId":"al7","Album":"Anderswo","Artists":["Gast"],"RunTimeTicks":1500000000,"UserData":{"IsFavorite":true,"PlayCount":0,"Played":false}}
+],"TotalRecordCount":2,"StartIndex":0}

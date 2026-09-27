@@ -1,0 +1,1 @@
+{"subsonic-response":{"status":"failed","version":"1.16.1","error":{"code":41,"message":"Token authentication not supported for LDAP users."}}}

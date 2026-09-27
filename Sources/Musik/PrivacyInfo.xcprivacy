@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Swiftly Music verfolgt niemanden und sammelt nichts. Die App spricht
+	     ausschliesslich mit dem Server, den der Nutzer selbst eintraegt. -->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+
+	<!-- Schnittstellen, die Apple begruenden laesst:
+	     - Voreinstellungen: die eigenen Einstellungen der App, die
+	       Geraetekennung fuer den Server und die Liste „Zuletzt gehoert".
+	       CA92.1 = nur Daten der eigenen App.
+	     - Dateizeiten: beim Aufraeumen des Bildspeichers faellt zuerst,
+	       was am laengsten nicht gebraucht wurde. C617.1 = Dateien im
+	       eigenen Container.
+	     - Freier Speicher: vor dem Laden eines Albums, ob es hinpasst.
+	       E174.1 = pruefen, ob genug Platz zum Schreiben da ist. -->
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>C617.1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>E174.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

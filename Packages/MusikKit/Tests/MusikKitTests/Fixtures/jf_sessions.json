@@ -1,0 +1,22 @@
+[
+  {"Id":"s-web","UserId":"u1","DeviceId":"web-1","DeviceName":"Firefox","Client":"Jellyfin Web",
+   "SupportsRemoteControl":true,"PlayableMediaTypes":["Audio","Video"],
+   "Capabilities":{"PlayableMediaTypes":["Audio","Video"],"SupportedCommands":["Play","PlayState","SetVolume"]},
+   "LastActivityDate":"2026-09-24T10:00:00.0000000Z","LastPlaybackCheckIn":"2026-09-24T09:59:58.1234567Z",
+   "NowPlayingItem":{"Id":"l2","Name":"Drift","Type":"Audio","MediaType":"Audio","Artists":["Brock Berrigan"],"Album":"Point Pleasant","AlbumId":"a1","RunTimeTicks":2010000000},
+   "PlayState":{"PositionTicks":735000000,"IsPaused":false,"VolumeLevel":80,"RepeatMode":"RepeatAll","PlaybackOrder":"Shuffle"},
+   "NowPlayingQueue":[{"Id":"l1","PlaylistItemId":"playlistItem0"},{"Id":"l2","PlaylistItemId":"playlistItem1"},{"Id":"l3","PlaylistItemId":"playlistItem2"}],
+   "PlaylistItemId":"playlistItem1"},
+  {"Id":"s-ich","UserId":"u1","DeviceId":"ich","DeviceName":"iPhone","Client":"Swiftly Music",
+   "SupportsRemoteControl":true,"PlayableMediaTypes":["Audio"],"LastActivityDate":"2026-09-24T10:00:01Z"},
+  {"Id":"s-tv","UserId":"u1","DeviceId":"tv-1","DeviceName":"Wohnzimmer TV","Client":"Swiftly Player",
+   "SupportsRemoteControl":true,"PlayableMediaTypes":["Video","Audio"],"LastActivityDate":"2026-09-24T09:40:00Z",
+   "NowPlayingItem":{"Id":"f1","Name":"Ein Film","Type":"Movie","MediaType":"Video"},
+   "PlayState":{"PositionTicks":10,"IsPaused":true}},
+  {"Id":"s-fremd","UserId":"u2","DeviceId":"web-2","DeviceName":"Chrome","Client":"Jellyfin Web",
+   "SupportsRemoteControl":true,"PlayableMediaTypes":["Audio"],"LastActivityDate":"2026-09-24T10:00:02Z",
+   "NowPlayingItem":{"Id":"x","Name":"Fremd","Type":"Audio"},"PlayState":{"IsPaused":false}},
+  {"Id":"s-dash","UserId":"u1","DeviceId":"dash","DeviceName":"Dashboard","Client":"curl",
+   "SupportsRemoteControl":false,"PlayableMediaTypes":[]},
+  {"Id":42}
+]

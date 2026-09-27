@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<specVersion><major>1</major><minor>0</minor></specVersion>
+<device>
+<deviceType>urn:schemas-upnp-org:device:ZonePlayer:1</deviceType>
+<friendlyName>192.168.1.21 - Sonos One - RINCON_000E58A0000101400</friendlyName>
+<manufacturer>Sonos, Inc.</manufacturer>
+<modelNumber>S18</modelNumber>
+<modelDescription>Sonos One</modelDescription>
+<modelName>Sonos One</modelName>
+<softwareVersion>79.1-56030</softwareVersion>
+<swGen>2</swGen>
+<roomName>Wohnzimmer</roomName>
+<displayName>One</displayName>
+<zoneType>11</zoneType>
+<UDN>uuid:RINCON_000E58A0000101400</UDN>
+<deviceList>
+<device><deviceType>urn:schemas-upnp-org:device:MediaRenderer:1</deviceType><friendlyName>Wohnzimmer - Sonos One Media Renderer</friendlyName><UDN>uuid:RINCON_000E58A0000101400_MR</UDN></device>
+</deviceList>
+</device>
+</root>

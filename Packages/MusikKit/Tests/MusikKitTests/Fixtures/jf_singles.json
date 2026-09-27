@@ -1,0 +1,7 @@
+{"Items":[
+{"Id":"s1","Name":"Sommerlied","Type":"MusicAlbum","ChildCount":1,"RunTimeTicks":2100000000,"AlbumArtist":"Ikkimel","AlbumArtists":[{"Id":"k1","Name":"Ikkimel"}],"DateCreated":"2026-09-20T10:00:00Z"},
+{"Id":"s2","Name":"Winterlied - Single","Type":"MusicAlbum","ChildCount":2,"RunTimeTicks":4200000000,"AlbumArtist":"Ikkimel","AlbumArtists":[{"Id":"k1","Name":"Ikkimel"}],"DateCreated":"2026-09-20T18:00:00Z"},
+{"Id":"e1","Name":"Vier Stücke","Type":"MusicAlbum","ChildCount":4,"RunTimeTicks":9000000000,"AlbumArtist":"Florida Juicy","AlbumArtists":[{"Id":"k2","Name":"Florida Juicy"}],"DateCreated":"2026-09-19T10:00:00Z"},
+{"Id":"a1","Name":"Langspieler","Type":"MusicAlbum","ChildCount":12,"RunTimeTicks":27000000000,"AlbumArtist":"Florida Juicy","AlbumArtists":[{"Id":"k2","Name":"Florida Juicy"}],"DateCreated":"2026-09-18T10:00:00Z"},
+{"Id":"o1","Name":"Ohne Albumkünstler","Type":"MusicAlbum","ChildCount":1,"AlbumArtist":"Unknown Artist","Artists":["nocashfromparents"],"ArtistItems":[{"Id":"k3","Name":"nocashfromparents"}],"DateCreated":"2026-09-17T10:00:00Z"}
+],"TotalRecordCount":5}

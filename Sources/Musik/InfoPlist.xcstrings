@@ -1,0 +1,22 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Name auf dem Home-Bildschirm",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Swiftly Music" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Swiftly Music" } }
+      }
+    },
+    "NSLocalNetworkUsageDescription" : {
+      "comment" : "Frage des Systems vor dem ersten Zugriff auf das Heimnetz",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Swiftly Music sucht deinen Musikserver und deine Sonos-Lautsprecher im Heimnetz. Ohne das erreicht die App keinen Server unter einer Adresse wie 192.168.1.5 und findet keine Lautsprecher." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Swiftly Music looks for your music server and your Sonos speakers on your home network. Without this, the app cannot reach a server at an address like 192.168.1.5 and finds no speakers." } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

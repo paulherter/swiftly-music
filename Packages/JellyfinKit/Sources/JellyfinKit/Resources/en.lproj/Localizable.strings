@@ -1,0 +1,102 @@
+/* Texte des Pakets. Der deutsche Wortlaut ist zugleich der
+   Schlüssel — so bleibt der Code ohne Kürzel lesbar. */
+
+"A–Z" = "A–Z";
+"Zuletzt" = "Recent";
+"Bewertung" = "Rating";
+"Jahr" = "Year";
+"Alle" = "All";
+"Angefangen" = "In progress";
+"Merkliste" = "Watchlist";
+"Ungesehen" = "Unwatched";
+"Direct Play — die Datei läuft unverändert." = "Direct Play — the file plays untouched.";
+"Direct Stream — nur der Container wird umgepackt, das Bild bleibt unangetastet." = "Direct Stream — only the container is repackaged, the picture is untouched.";
+"Der Server transkodiert. Grund unbekannt." = "The server is transcoding. Reason unknown.";
+"Der Server transkodiert: %@" = "The server is transcoding: %@";
+"Video" = "Video";
+"Audio" = "Audio";
+"Untertitel" = "Subtitles";
+"Container" = "Container";
+"%@ „%@“ wird nicht direkt unterstützt (%@)." = "%@ “%@” is not directly supported (%@).";
+"%@ „%@“ steht nicht im Geräteprofil." = "%@ “%@” is not in the device profile.";
+"nicht im Profil deklariert" = "not declared in the profile";
+"%lld Kanäle" = "%lld channels";
+"würde eingebrannt" = "would be burned in";
+"Stereo" = "Stereo";
+"Mono" = "Mono";
+"Staffel %lld" = "Season %lld";
+"Folge %lld" = "Episode %lld";
+"Nicht angemeldet." = "Not signed in.";
+"Das andere Gerät hat nicht reagiert." = "The other device did not respond.";
+
+/* AirPlay und Abschnitte */
+"Das Bild liegt als %@ vor. AirPlay überträgt nur H.264 und HEVC." = "The video is %@. AirPlay only carries H.264 and HEVC.";
+"Der Ton liegt als %@ vor. Apple-Geräte nehmen das über AirPlay nicht an." = "The audio is %@. Apple devices will not accept that over AirPlay.";
+"Die Datei liegt als %@ vor. Für AirPlay müsste der Server sie umpacken — er bietet das nicht an. In den Servereinstellungen unter „Wiedergabe“ muss Transkodierung erlaubt sein." = "The file is %@. AirPlay needs the server to repackage it, and it is not offering that. Transcoding must be enabled in your server settings under \"Playback\".";
+"Über Bildschirmsynchronisierung im Kontrollzentrum läuft der Film trotzdem auf dem Fernseher." = "Screen Mirroring from Control Centre will still get the film onto your TV.";
+"Intro überspringen" = "Skip Intro";
+"Abspann überspringen" = "Skip Credits";
+"Rückblick überspringen" = "Skip Recap";
+"Vorschau überspringen" = "Skip Preview";
+"Werbung überspringen" = "Skip Ad";
+"Nächste Folge" = "Next Episode";
+"Überspringen" = "Skip";
+"Der Server nennt keine abspielbare Fassung." = "The server does not offer a playable version.";
+
+/* Laufzeit — aus Sources/Shared/Titelangaben.swift hierher gehoben. */
+"%lld Std. %lld Min." = "%lld h %lld min";
+"%lld Min." = "%lld min";
+
+/* Wiedergabewahlen — aus Sources/Shared hierher gehoben. */
+"Unbegrenzt" = "Unlimited";
+"%lld Mbit/s" = "%lld Mbps";
+"Wie die Datei" = "As in the file";
+
+"Film" = "Movie";
+"Serie" = "Series";
+"Folge" = "Episode";
+"Keine" = "None";
+"Lädt…" = "Loading…";
+"Keine Folgen" = "No episodes";
+"Noch %lld Minuten" = "%lld minutes left";
+"Fortsetzen %@" = "Resume %@";
+"Abspielen %@" = "Play %@";
+"%lld Staffeln" = "%lld seasons";
+"Die Adresse konnte nicht gelesen werden." = "The address could not be read.";
+"Benutzername oder Passwort stimmt nicht." = "Username or password is wrong.";
+"Dieses Konto darf das nicht." = "This account is not allowed to do that.";
+"Das gibt es auf dem Server nicht." = "The server does not have that.";
+"Der Server hat einen Fehler gemeldet." = "The server reported an error.";
+"Keine Verbindung." = "No connection.";
+"Der Server hat nicht geantwortet." = "The server did not answer.";
+"Unter dieser Adresse ist kein Server erreichbar." = "No server is reachable at this address.";
+"Der Server hat mit %lld geantwortet." = "The server answered with %lld.";
+"Die Antwort des Servers war unverständlich." = "The server's answer was unreadable.";
+"unbekannt" = "unknown";
+"Normal" = "Normal";
+"Schlechte Verbindung" = "Poor connection";
+"Sehr schlechte Verbindung" = "Very poor connection";
+
+/* Merkgattung und Wiedergabeplan — standen im Code, aber in keinem Katalog. */
+"Filme" = "Movies";
+"Serien" = "Series";
+"Filme & Serien" = "Movies & Shows";
+"Transkodiert" = "Transcoded";
+"Direct Play" = "Direct Play";
+"Direct Stream" = "Direct Stream";
+
+/* Quick Connect */
+"Die Verbindung zum Server ist abgebrochen." = "The connection to the server dropped.";
+"Der Code ist abgelaufen. Hol dir einen neuen." = "The code has expired. Get a new one.";
+"Der Code ist abgelaufen oder falsch." = "The code has expired or is wrong.";
+"Der Server hat Quick Connect abgeschaltet." = "Quick Connect is turned off on this server.";
+
+/* Zertifikat und Verbindung — was auf den curl-Plattformen als Code -1 ankommt. */
+"Dem Zertifikat des Servers wird nicht vertraut." = "The server's certificate is not trusted.";
+"Das Zertifikat des Servers ist abgelaufen." = "The server's certificate has expired.";
+"Das Zertifikat des Servers gilt noch nicht." = "The server's certificate is not valid yet.";
+"Das Zertifikat des Servers gehört zu einer anderen Adresse." = "The server's certificate belongs to a different address.";
+"Die verschlüsselte Verbindung kam nicht zustande." = "The encrypted connection could not be established.";
+"Die Verbindung zum Server hat nicht geklappt." = "The connection to the server failed.";
+"Dein Server will eine Zwei-Faktor-Bestätigung. Gib dieses Gerät im Browser frei oder melde dich mit einem App-Passwort an." = "Your server asks for two-factor confirmation. Approve this device in your browser or sign in with an app password.";
+"Vor dem Server sitzt eine Anmeldeseite, etwa Cloudflare Access oder Authelia. Trag die Header, die sie verlangt, unter „Erweitert“ ein." = "There's a sign-in page in front of the server, such as Cloudflare Access or Authelia. Add the headers it asks for under “Advanced”.";

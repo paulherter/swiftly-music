@@ -1,0 +1,7 @@
+{"Items":[
+{"Name":"a","Id":"s1","Type":"Audio","AlbumId":"alB","UserData":{"PlayCount":2,"LastPlayedDate":"2026-09-23T10:00:00.0000000Z","Played":true}},
+{"Name":"b","Id":"s2","Type":"Audio","AlbumId":"alA","UserData":{"PlayCount":5,"LastPlayedDate":"2026-09-23T09:00:00.0000000Z","Played":true}},
+{"Name":"c","Id":"s3","Type":"Audio","AlbumId":"alB","UserData":{"PlayCount":1,"LastPlayedDate":"2026-09-22T09:00:00.0000000Z","Played":true}},
+{"Name":"d","Id":"s4","Type":"Audio","UserData":{"PlayCount":1,"Played":true}},
+{"Name":"e","Id":"s5","Type":"Audio","AlbumId":"alC","UserData":{"PlayCount":1,"LastPlayedDate":"2026-09-21T09:00:00.0000000Z","Played":true}}
+],"TotalRecordCount":5}

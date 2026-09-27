@@ -1,0 +1,6 @@
+{"Items":[
+{"Name":"Kapitel 1","Id":"h1","Type":"AudioBook","ParentId":"ordnerSand","Album":"Der Sandmann","AlbumArtist":"E. T. A. Hoffmann","IndexNumber":1,"RunTimeTicks":6000000000,"ImageTags":{"Primary":"t1"},"UserData":{"PlaybackPositionTicks":1200000000,"Played":false}},
+{"Name":"Kapitel 2","Id":"h2","Type":"AudioBook","ParentId":"ordnerSand","Album":"Der Sandmann","AlbumArtist":"E. T. A. Hoffmann","IndexNumber":2,"RunTimeTicks":6000000000},
+{"Name":"Effi Briest","Id":"h3","Type":"AudioBook","ParentId":"ordnerViele","Album":"Effi Briest","AlbumArtist":"Theodor Fontane","RunTimeTicks":36000000000},
+{"Name":"Der Schimmelreiter","Id":"h4","Type":"AudioBook","ParentId":"ordnerViele","Album":"Der Schimmelreiter","AlbumArtist":"Theodor Storm","RunTimeTicks":18000000000,"ImageTags":{"Primary":"t4"}}
+],"TotalRecordCount":4}

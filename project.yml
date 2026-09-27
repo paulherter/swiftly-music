@@ -1,0 +1,116 @@
+# Swiftly Music — the Xcode project is generated from this file:
+#
+#     xcodegen generate
+#
+# Only the iPhone app. The packages sit next to it under `Packages/`;
+# JellyfinKit is shared with Swiftly Player and copied in here unchanged.
+name: SwiftlyMusic
+options:
+  bundleIdPrefix: de.paulherter
+  # German is the source language; English comes from the string catalog.
+  developmentLanguage: de
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: false
+
+packages:
+  JellyfinKit:
+    path: Packages/JellyfinKit
+  SubsonicKit:
+    path: Packages/SubsonicKit
+  MusikKit:
+    path: Packages/MusikKit
+  # The launch animation.
+  Lottie:
+    url: https://github.com/airbnb/lottie-ios
+    from: 4.5.0
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_EMIT_LOC_STRINGS: "YES"
+    DEVELOPMENT_TEAM: 63L6TSM2Y9
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_STRICT_CONCURRENCY: complete
+
+schemes:
+  SwiftlyMusic-iOS:
+    build:
+      targets:
+        SwiftlyMusic-iOS: all
+    run:
+      config: Debug
+    archive:
+      config: Release
+
+targets:
+  SwiftlyMusic-iOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "18.0"
+    sources:
+      - path: Sources/Musik
+      - path: Sources/Shared/Farben.swift
+      - path: Sources/Shared/SVGPfad.swift
+      - path: Sources/Shared/Keychain.swift
+      # „Protokoll teilen" wie im Player, unverändert; `Protokoll` und
+      # `Fassung` stellt Sources/Musik.
+      - path: Sources/Shared/Protokollteilen.swift
+    dependencies:
+      - package: MusikKit
+      - package: JellyfinKit
+      - package: SubsonicKit
+      # Fuer die Startanimation, dieselbe wie im Player.
+      - package: Lottie
+    info:
+      path: Sources/Musik/Info.plist
+      properties:
+        # Die Rueckfallsprache, nicht die Ausgangssprache — dieselbe
+        # Begruendung wie bei Swiftly-iOS.
+        CFBundleDevelopmentRegion: en
+        CFBundleDisplayName: Swiftly Music
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen:
+          UIColorName: Startgrund
+        # Nur iPhone, nur hochkant. iPad und Mac kommen spaeter mit eigener
+        # Anordnung (Seitenleiste, Player quer) — siehe die Uebergabe, §9.
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        # Die ganze App ist dunkel; so sind es auch Systemmenues und die
+        # Ausgabewahl.
+        UIUserInterfaceStyle: Dark
+        # Musik laeuft weiter, wenn der Bildschirm aus ist.
+        UIBackgroundModes:
+          - audio
+        # 120 Hz auf ProMotion-iPhones: ohne diesen Schluessel deckelt iOS
+        # jede App auf 60, auch die Feder zwischen Pille und Blatt
+        # (`Blattantrieb`) und die Systemanimationen. Wie bei Swiftly-iOS.
+        CADisableMinimumFrameDurationOnPhone: true
+        # Dieselbe Begruendung wie bei Swiftly-iOS: die Adresse eines selbst
+        # betriebenen Servers kennt niemand zur Bauzeit.
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+        NSLocalNetworkUsageDescription: Swiftly Music looks for your music server
+          and your Sonos speakers on your home network. Without this, the app
+          cannot reach a server at an address like 192.168.1.5 and finds no
+          speakers.
+        # Sonos ueber Bonjour finden, nicht ueber SSDP: Multicast braeuchte
+        # Apples Sonderfreigabe. Ohne diesen Eintrag sieht NWBrowser nichts.
+        NSBonjourServices:
+          - _sonos._tcp
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_NAME: SwiftlyMusic
+        PRODUCT_BUNDLE_IDENTIFIER: de.paulherter.swiftly.music
+        TARGETED_DEVICE_FAMILY: "1"
+        # Eigene Zaehlung, unabhaengig vom Player.
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        # Ohne Zugriffsgruppe verweigert der Schluesselbund das Schreiben
+        # (-34018). Eine eigene Gruppe: der Player und Swiftly Music teilen
+        # keine Anmeldung, jede App meldet sich mit eigener Geraetekennung an.
+        CODE_SIGN_ENTITLEMENTS: Sources/Musik/SwiftlyMusic.entitlements

@@ -1,0 +1,5 @@
+{"Items":[
+{"Id":"a","Name":"Eins","Type":"Audio","PlaylistItemId":"e1"},
+{"Id":"b","Name":"Zwei","Type":"Audio","PlaylistItemId":"e2"},
+{"Id":"a","Name":"Eins","Type":"Audio","PlaylistItemId":"e3"}
+],"TotalRecordCount":3}

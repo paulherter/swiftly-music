@@ -1,0 +1,1 @@
+{"MediaSources":[{"Id":"l1","Container":"flac","SupportsDirectPlay":false,"SupportsDirectStream":false,"SupportsTranscoding":true,"TranscodingUrl":"/Audio/l1/stream.mp3?DeviceId=g&MediaSourceId=l1&AudioCodec=mp3&AudioBitrate=192000&TranscodingMaxAudioChannels=2"}],"PlaySessionId":"abc"}
